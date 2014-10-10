@@ -1,3 +1,169 @@
 // Place all the styles related to the sessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@media (max-width: 800px) {
+  .coll-mobille-50 {
+    width: 48%;
+    float: left;
+    padding: 15px 1%;
+  }
+
+  .coll-mobille-100 {
+    width: 100%;
+    float: left;
+    padding: 15px 1%;
+  }
+}
+
+
+#sing_m {
+  min-height: 440px;
+  background-color: #0f6274;
+  margin: 80px 0 100px 0;
+
+}
+#sing {
+  max-width: 980px;
+  min-height: 440px;
+  margin: 5px auto 128px auto;
+
+  img {
+    width: 27.3%;
+    position: relative;
+    top: -62px;
+    left: 6.3%;
+    float: left;
+  } 
+}
+
+#emp {
+  max-width: 980px;
+  min-height: 346px;
+  margin: 159px auto 16px auto;
+  border-top: 3px solid #581212;;
+
+}
+
+#name_div {
+  margin: 0 auto;
+  position: relative;
+  padding: 0 11px;
+  display: table;
+  text-align: center;
+  top: -11px;
+  font-size: 20px;
+  z-index: 10;
+  background-color: white;
+}
+
+#emp_link {
+  width: 25%;
+  float: left;
+  padding: 39px 3%;
+
+  a {
+    margin: 0 21%;
+  }
+
+  b {
+    font-size: 12.5px;
+  }
+
+  .name_blu {
+    font-size: 20px;
+    color: #00b8ff;
+  }
+}
+
+#job {
+  max-width: 980px;
+  min-height: 370px;
+  margin: 5px auto;
+  border-top: 3px solid #581212; 
+}
+
+#rekl_m {
+  min-height: 1462px;
+  background-color: rgb(202, 202, 202);
+  margin-top: 19px;
+
+}
+#rekl {
+  max-width: 980px;
+  min-height: 1462px;
+  margin: 0px auto;
+
+  img {
+    width: 28.5%;
+  } 
+}
+
+#pol {
+  margin: 35px 0 0 0px;
+  float: right;
+  padding: 0 90px 0 116px;
+
+  p {
+    font-size: 29px;
+    line-height: 36px;
+    color: white; 
+  }
+
+  b {
+    float: left;
+    margin: 13px 25px 0px 20px;
+    font-size: 17px;
+    color: white;
+  }
+
+  .my_lab {
+    width: 352px;
+    height: 31px;
+    font-size: 15px;
+    padding-left: 10px;
+  }
+}
+
+#buto {
+  width: 146px;
+  height: 33px;
+  color: white;
+  font-size: 19px;
+  float: left;
+}
+
+#lab {
+  height: 50px;
+}
+
+#rekl_top {
+  width: 100%;
+  height: auto;
+  padding: 95px 15px 0 40px;
+
+  .rekl_text {
+    float: left;
+    text-align: right;
+    padding: 24.5% 9% 0 0;
+  }
+}
+
+#rekl_butom { 
+  width: 100%;
+  height: auto;
+  padding-left: 3.5%;
+
+  .rekl_text {
+    float: right;
+    text-align: left;
+    padding: 23.5% 8% 0 8.5%;    
+  }
+}
+
+.rekl_text {
+  font-size: 37px;
+  width: 71%;
+  line-height: 44px;
+  color: #00b8ff;
+}

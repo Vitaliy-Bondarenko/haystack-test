@@ -1,17 +1,119 @@
-%h1 Listing sessions
+#sing_m
+  #sing
+    = image_tag("iphone1.png", :class => "hidden-sm hidden-xs")
+    #pol.col-xs-12.col-md-8
+      %p
+        Sign Up now and view hundreds of jobs in minutes for free!
+      %br   
+      %br 
+      = button_to 'Applicant', "#", :id => "buto", :style => "background-color: rgb(235, 181, 118);"
+      %b or
+      = button_to 'Employer', "#", :id => "buto", :style => "background-color: rgb(52, 173, 241);"
+      %br
+      %br
+      %br
+      = email_field_tag "description", "", :placeholder => "email@example.com", :class => 'my_lab'
+      %br
+      %br
+      = password_field_tag "description", "", :placeholder => "password", :class => 'my_lab'
+      %br
+      %br
+      = password_field_tag "description", "", :placeholder => "repyte password", :class => 'my_lab'
+      %br
+      %br
+      = button_to 'Sing up', "#", :id => "buto", :style => "background-color: rgb(235, 181, 118); margin-left: 207px;"
+#emp
+  #name_div Emploers
+  #emp_link
+    = link_to image_tag("candidates.png"), '#'
+    %br
+    %br
+    %br
+    %b.name_blu
+      %center Browse Candidates
+    %br
+    %b
+      %center Browse and select candidates hunderson on filteder job aplicants on minutes
+  #emp_link
+    = link_to image_tag("match.png"), '#'
+    %br
+    %br
+    %br
+    %b.name_blu
+      %center Browse Candidates
+    %br
+    %b
+      %center Browse and select candidates hunderson on filteder job aplicants on minutes
+  #emp_link
+    = link_to image_tag("emp_time.png"), '#'
+    %br
+    %br
+    %br
+    %b.name_blu
+      %center Browse Candidates
+    %br
+    %b
+      %center Browse and select candidates hunderson on filteder job aplicants on minutes
+  #emp_link
+    = link_to image_tag("privacy.png"), '#'
+    %br
+    %br
+    %br
+    %b.name_blu
+      %center Browse Candidates
+    %br
+    %b
+      %center Browse and select candidates hunderson on filteder job aplicants on minutes
+#job
+  #name_div Job Seekers
+  #emp_link
+    = link_to image_tag("jobs.png"), '#'
+    %br
+    %br
+    %br
+    %b.name_blu
+      %center Browse Candidates
+    %br
+    %b
+      %center Browse and select candidates hunderson on filteder job aplicants on minutes
+  #emp_link
+    = link_to image_tag("like_you.png"), '#'
+    %br
+    %br
+    %br
+    %b.name_blu
+      %center Browse Candidates
+    %br
+    %b
+      %center Browse and select candidates hunderson on filteder job aplicants on minutes
+  #emp_link
+    = link_to image_tag("emp_time.png"), '#'
+    %br
+    %br
+    %br
+    %b.name_blu
+      %center Browse Candidates
+    %br
+    %b
+      %center Browse and select candidates hunderson on filteder job aplicants on minutes
+  #emp_link
+    = link_to image_tag("resume.png"), '#'
+    %br
+    %br
+    %br
+    %b.name_blu
+      %center Browse Candidates
+    %br
+    %b
+      %center Browse and select candidates hunderson on filteder job aplicants on minutes
+#rekl_m
+  #rekl
+    #rekl_top
+      .rekl_text
+        We show you only the information you need to decide if a position or candidate is right for you
+      = image_tag("iphone1.png")
+    #rekl_butom
+      = image_tag("iphone2.png")
+      .rekl_text
+        If an applicant and employer both select each other, the applicants resume is sent to the hiring managers email
 
-%table
-  %tr
-    %th
-    %th
-    %th
-
-  - @sessions.each do |session|
-    %tr
-      %td= link_to 'Show', session
-      %td= link_to 'Edit', edit_session_path(session)
-      %td= link_to 'Destroy', session, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
-%br
-
-= link_to 'New Session', new_session_path

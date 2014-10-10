@@ -1,0 +1,22 @@
+#hed
+  #navig_slim.visible-sm.visible-xs
+    %button.nav-button Toggle Navigation
+    %ul.primary-nav
+      %li
+        %a{:href => "#"} About US
+      %li
+        %a{:href => "#"} Emploers
+      %li
+        %a{:href => "#"} Job Seekers
+      %li
+        %a{:href => "#"} Sing UP
+      %li
+        %a{:href => "#"} Login
+  #logo
+    = image_tag("logo.png", :alt => "logo")
+  #menu.hidden-sm.hidden-xs
+    = link_to 'Login', '#', {:class => "menu_link", :style => "color: #F36D39"}
+    = link_to 'Sing UP', '#', {:class => "menu_link", :style => "color: #F36D39"}
+    = link_to 'Job Seekers', '#', {:class => "menu_link"}
+    = link_to 'Emploers', '#', {:class => "menu_link"}
+    = link_to 'About US', '#', {:class => "menu_link"}
