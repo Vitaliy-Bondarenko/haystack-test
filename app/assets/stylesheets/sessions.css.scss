@@ -164,7 +164,7 @@ legend {
   }
 }
 
-#buto {
+.buto {
   width: 144px;
   height: 33px;
   color: white;
@@ -173,6 +173,22 @@ legend {
   border: none;
   margin: 10px 0;
 }
+
+.buto_ok {
+  background-color: #F17420;
+  margin-left: 207px;
+}
+
+.buto_orange {
+  background-color: #F17420;
+}
+
+.buto_blue {
+  background-color: rgb(52, 173, 241);
+}
+
+
+
 
 #lab {
   height: 50px;
