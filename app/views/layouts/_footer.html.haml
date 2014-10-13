@@ -5,7 +5,10 @@
       = link_to 'Terms', '#', {:class => "menu_foot"}
       = link_to 'Privacy', '#', {:class => "menu_foot"}
     #emb_soc
-      = link_to image_tag("facebook.png"), '#'
-      = link_to image_tag("twiter.png"), '#'
-      = link_to image_tag("instagram.png"), '#'
+      %a{:href => "#"}
+        .sprite3.facebook
+      %a{:href => "#"}
+        .sprite3.twiter
+      %a{:href => "#"}
+        .sprite3.instagram
       

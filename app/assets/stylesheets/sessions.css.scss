@@ -16,10 +16,61 @@
   }
 }
 
+.sprite { 
+  background: url('sprite1.png') no-repeat top left;
+  width: 110px;
+  height: 110px;
+  margin: 0 auto;
+}
+
+.sprite.candidates { background-position: 0px 0px;  } 
+.sprite.match { background-position: -110px 0px;  } 
+.sprite.emp_time { background-position: -220px 0px;  } 
+.sprite.privacy { background-position: -330px 0px;  } 
+.sprite.jobs { background-position: -440px 0px;  } 
+.sprite.like_you { background-position: -550px 0px;  } 
+.sprite.job_time { background-position: -660px 0px;  } 
+.sprite.resume { background-position: -770px 0px;  }
+
+.sprite2 {
+  background: url('sprite2.png') no-repeat top left;
+  width: 266px;
+  height: 565px;
+} 
+
+.sprite2.iphone {
+  background-position: 0px 0px;
+  position: relative;
+  top: -62px;
+  left: 6.3%;
+  float: left;
+}
+
+.sprite2.iphone1 {
+  background-position: 0px 0px;
+  float: right;
+} 
+.sprite2.iphone2 { 
+  background-position: -267px 0px;
+  float: left;
+}
+
+legend {
+  display: block;
+  padding: 0 15px;
+  margin-bottom: 10px;
+  font-size: 23.5px;
+  font-weight: 600;
+  line-height: inherit;
+  color: #F59F65;
+  border: 0;
+  text-align: center;
+  width: inherit;  
+}
 
 #sing_m {
   min-height: 440px;
-  background-color: #0f6274;
+  background-color: #0F6274;
   margin: 80px 0 100px 0;
 
 }
@@ -40,52 +91,39 @@
 #emp {
   max-width: 980px;
   min-height: 346px;
-  margin: 159px auto 16px auto;
-  border-top: 3px solid #581212;;
-
+  margin: 149px auto 16px auto;
+  border-top: 3px solid #F17420;
 }
 
-#name_div {
-  margin: 0 auto;
-  position: relative;
-  padding: 0 11px;
-  display: table;
-  text-align: center;
-  top: -11px;
-  font-size: 20px;
-  z-index: 10;
-  background-color: white;
-}
+
 
 #emp_link {
-  width: 25%;
+  /*width: 25%;*/
   float: left;
   padding: 39px 3%;
 
-  a {
-    margin: 0 21%;
-  }
-
   b {
     font-size: 12.5px;
+    color: #868686;
   }
 
   .name_blu {
     font-size: 20px;
-    color: #00b8ff;
+    color: #1694C9;
   }
 }
 
 #job {
   max-width: 980px;
   min-height: 370px;
-  margin: 5px auto;
-  border-top: 3px solid #581212; 
+  margin: 5px auto 30px auto;
+  border-top: 3px solid #F17420;
+  padding: 14px 0;
 }
 
 #rekl_m {
   min-height: 1462px;
-  background-color: rgb(202, 202, 202);
+  background-color: #F6F6F6;
   margin-top: 19px;
 
 }
@@ -107,12 +145,14 @@
   p {
     font-size: 29px;
     line-height: 36px;
-    color: white; 
+    color: white;
+    margin-top: 16px;
+    margin-bottom: 21px; 
   }
 
   b {
     float: left;
-    margin: 13px 25px 0px 20px;
+    margin: 19px 23px 0px 25px;
     font-size: 17px;
     color: white;
   }
@@ -122,15 +162,18 @@
     height: 31px;
     font-size: 15px;
     padding-left: 10px;
+    margin: 10px 60px 10px 0;
   }
 }
 
 #buto {
-  width: 146px;
+  width: 144px;
   height: 33px;
   color: white;
   font-size: 19px;
   float: left;
+  border: none;
+  margin: 10px 0;
 }
 
 #lab {
@@ -140,12 +183,16 @@
 #rekl_top {
   width: 100%;
   height: auto;
-  padding: 95px 15px 0 40px;
+  padding: 97px 20px 0 40px;
+  display: table;
 
   .rekl_text {
     float: left;
     text-align: right;
-    padding: 24.5% 9% 0 0;
+    padding: 24% 9% 0 0;
+    font-weight: normal;
+    font-family: sans-serif;
+    font-size: 37px;
   }
 }
 
@@ -153,6 +200,7 @@
   width: 100%;
   height: auto;
   padding-left: 3.5%;
+  display: table;
 
   .rekl_text {
     float: right;
@@ -165,5 +213,5 @@
   font-size: 37px;
   width: 71%;
   line-height: 44px;
-  color: #00b8ff;
+  color: #2092CC;
 }
