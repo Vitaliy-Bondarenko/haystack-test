@@ -17,6 +17,12 @@
 //= require_tree .
 
 $(document).ready(function(){
+  $(".buto_oranje").click(function () {
+    $("#button_applicant").toggleClass("active");
+  });    
+});
+
+$(document).ready(function(){
   $(".nav-button").click(function () {
     $(".nav-button,.primary-nav").toggleClass("open");
   });    
