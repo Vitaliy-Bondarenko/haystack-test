@@ -18,15 +18,9 @@ pre {
   font-size: 11px;
 }
 
-a {
-  
-  &:visited {
-    color: #3DA6D2;
-  }
-  &:hover {
+a:hover {
     text-decoration: none;
   }
-}
 
 div {
   &.field, &.actions {
@@ -51,6 +45,7 @@ div {
   padding-bottom: 0;
   margin-bottom: 20px;
   background-color: #f0f0f0;
+
   h2 {
     text-align: left;
     font-weight: bold;
@@ -61,6 +56,7 @@ div {
     background-color: #c00;
     color: #fff;
   }
+
   ul li {
     font-size: 12px;
     list-style: square;
@@ -108,7 +104,13 @@ div {
   text-align: center;
   font-size: 18px;
   height: 30px; 
-  margin-left: 3%
+  margin-left: 3%;
+  white-space: nowrap;
+  color: #3DA6D2;
+}
+
+.link_orange {
+  color: #F17420;
 }
 
 .menu_foot {
@@ -143,7 +145,7 @@ div {
   width: 35%;
 }
 
-.nav-button {display: none;} 
+ 
 
 @media only screen {
   .nav-button {

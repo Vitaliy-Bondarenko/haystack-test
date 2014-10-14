@@ -172,8 +172,15 @@ legend {
   margin-left: 207px;
 }
 
-.buto_orange {
-  background-color: #F17420;
+
+@media only screen {
+  .buto_orange {
+    background-color: #F17420;
+  }
+
+  .active {
+    font-size: 50px;
+  }
 }
 
 .buto_blue {

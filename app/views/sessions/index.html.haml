@@ -4,9 +4,9 @@
     #pol.col-xs-12.col-md-8
       %p
         Sign Up now and view hundreds of jobs in minutes for free!
-      = button_to 'Applicant', "#", :id => "button_applicant", :class => "buto buto_orange"
+      %button#button_applicant.buto.buto_orange Applicant
       %b or
-      = button_to 'Employer', "#", :id => "button_employer", :class => "buto buto_blue"
+      %button#button_employer.buto.buto_blue Employer
       = email_field_tag "description", "", :placeholder => "email@example.com", :class => 'my_lab'
       = password_field_tag "description", "", :placeholder => "password", :class => 'my_lab'
       = password_field_tag "description", "", :placeholder => "repyte password", :class => 'my_lab'
