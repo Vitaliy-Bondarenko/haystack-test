@@ -174,7 +174,6 @@ div {
   }
 
   .nav-button.open {
-    /*width: 7%;*/
     background: url('close-icon-large.png'), -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.2));
     background: url('close-icon-large.png'),    -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.2));
     background: url('close-icon-large.png'),     -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.2));
@@ -277,14 +276,14 @@ div {
   }
 }
 
-.sprite3 { 
-  background: url('sprite3.png') no-repeat top left;
+.sprite_footer { 
+  background: url('sprites/foot_soc.png') no-repeat top left;
   width: 45px;
   height: 45px;
   float: left;
   margin-left: 19%;
 }
 
-.sprite3.facebook { background-position: 0px 0px;  } 
-.sprite3.twiter { background-position: -46px 0px;  } 
-.sprite3.instagram { background-position: -92px 0px;  } 
+.sprite_footer.facebook { background-position: 0px 0px;  } 
+.sprite_footer.twiter { background-position: -46px 0px;  } 
+.sprite_footer.instagram { background-position: -92px 0px;  } 

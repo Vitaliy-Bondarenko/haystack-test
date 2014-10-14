@@ -1,6 +1,6 @@
 #sing_m
   #sing
-    .sprite2.iphone.hidden-sm.hidden-xs
+    .sprite_iphone.iphone.hidden-sm.hidden-xs
     #pol.col-xs-12.col-md-8
       %p
         Sign Up now and view hundreds of jobs in minutes for free!
@@ -12,10 +12,10 @@
       = password_field_tag "description", "", :placeholder => "repyte password", :class => 'my_lab'
       = button_to 'Sing up', "#", :id => "button_singup", :class => "buto buto_ok"
 %fieldset#emp
-  %legend Employers
+  %legend.leg_emp Employers
   #emp_link.col-xs-6.col-md-3
     %a{:href => "#"}
-      .sprite.candidates
+      .sprite_job_emp.candidates
     %br
     %br
     %b.name_blu
@@ -25,7 +25,7 @@
       %center Browse and select candidates hunderson on filteder job aplicants on minutes
   #emp_link.col-xs-6.col-md-3
     %a{:href => "#"}
-      .sprite.match
+      .sprite_job_emp.match
     %br
     %br
     %b.name_blu
@@ -35,7 +35,7 @@
       %center Browse and select candidates hunderson on filteder job aplicants on minutes
   #emp_link.col-xs-6.col-md-3
     %a{:href => "#"}
-      .sprite.emp_time
+      .sprite_job_emp.emp_time
     %br
     %br
     %b.name_blu
@@ -45,7 +45,7 @@
       %center Browse and select candidates hunderson on filteder job aplicants on minutes
   #emp_link.col-xs-6.col-md-3
     %a{:href => "#"}
-      .sprite.privacy    
+      .sprite_job_emp.privacy    
     %br
     %br
     %b.name_blu
@@ -54,10 +54,10 @@
     %b
       %center Browse and select candidates hunderson on filteder job aplicants on minutes
 %fieldset#job
-  %legend Job Seekers
+  %legend.leg_job Job Seekers
   #emp_link.col-xs-6.col-md-3
     %a{:href => "#"}
-      .sprite.jobs
+      .sprite_job_emp.jobs
     %br
     %br
     %b.name_blu
@@ -67,7 +67,7 @@
       %center Browse and select candidates hunderson on filteder job aplicants on minutes
   #emp_link.col-xs-6.col-md-3
     %a{:href => "#"}
-      .sprite.like_you
+      .sprite_job_emp.like_you
     %br
     %br
     %b.name_blu
@@ -77,7 +77,7 @@
       %center Browse and select candidates hunderson on filteder job aplicants on minutes
   #emp_link.col-xs-6.col-md-3
     %a{:href => "#"}
-      .sprite.job_time
+      .sprite_job_emp.job_time
     %br
     %br
     %b.name_blu
@@ -87,7 +87,7 @@
       %center Browse and select candidates hunderson on filteder job aplicants on minutes
   #emp_link.col-xs-6.col-md-3
     %a{:href => "#"}
-      .sprite.resume
+      .sprite_job_emp.resume
     %br
     %br
     %b.name_blu
@@ -100,9 +100,9 @@
     #rekl_top
       .rekl_text
         We show you only the information you need to decide if a position or candidate is right for you
-      .sprite2.iphone1
+      .sprite_iphone.iphone_l
     #rekl_butom
-      .sprite2.iphone2
+      .sprite_iphone.iphone_r
       .rekl_text
         If an applicant and employer both select each other, the applicants resume is sent to the hiring managers email
 

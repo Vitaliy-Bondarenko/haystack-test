@@ -2,43 +2,29 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-@media (max-width: 800px) {
-  .coll-mobille-50 {
-    width: 48%;
-    float: left;
-    padding: 15px 1%;
-  }
-
-  .coll-mobille-100 {
-    width: 100%;
-    float: left;
-    padding: 15px 1%;
-  }
-}
-
-.sprite { 
-  background: url('sprite1.png') no-repeat top left;
+.sprite_job_emp { 
+  background: url('sprites/job_and_emp.png') no-repeat top left;
   width: 110px;
   height: 110px;
   margin: 0 auto;
 }
 
-.sprite.candidates { background-position: 0px 0px;  } 
-.sprite.match { background-position: -110px 0px;  } 
-.sprite.emp_time { background-position: -220px 0px;  } 
-.sprite.privacy { background-position: -330px 0px;  } 
-.sprite.jobs { background-position: -440px 0px;  } 
-.sprite.like_you { background-position: -550px 0px;  } 
-.sprite.job_time { background-position: -660px 0px;  } 
-.sprite.resume { background-position: -770px 0px;  }
+.sprite_job_emp.candidates { background-position: 0px 0px;  } 
+.sprite_job_emp.match { background-position: -110px 0px;  } 
+.sprite_job_emp.emp_time { background-position: -220px 0px;  } 
+.sprite_job_emp.privacy { background-position: -330px 0px;  } 
+.sprite_job_emp.jobs { background-position: -440px 0px;  } 
+.sprite_job_emp.like_you { background-position: -550px 0px;  } 
+.sprite_job_emp.job_time { background-position: -660px 0px;  } 
+.sprite_job_emp.resume { background-position: -770px 0px;  }
 
-.sprite2 {
-  background: url('sprite2.png') no-repeat top left;
+.sprite_iphone {
+  background: url('sprites/iphones.png') no-repeat top left;
   width: 266px;
   height: 565px;
 } 
 
-.sprite2.iphone {
+.sprite_iphone.iphone {
   background-position: 0px 0px;
   position: relative;
   top: -62px;
@@ -46,11 +32,11 @@
   float: left;
 }
 
-.sprite2.iphone1 {
+.sprite_iphone.iphone_l {
   background-position: 0px 0px;
   float: right;
 } 
-.sprite2.iphone2 { 
+.sprite_iphone.iphone_r { 
   background-position: -267px 0px;
   float: left;
 }
@@ -58,15 +44,22 @@
 legend {
   display: block;
   padding: 0 15px;
-  margin-bottom: 10px;
   font-size: 23.5px;
   font-weight: 600;
   line-height: inherit;
   color: #F59F65;
   border: 0;
-  text-align: center;
-  width: inherit;  
+  white-space: nowrap;
+  width: inherit; 
 }
+
+.leg_emp {
+  margin: 0 43% 10px;
+}
+
+.leg_job {
+  margin: 0 42% 10px;
+} 
 
 #sing_m {
   min-height: 440px;
@@ -160,7 +153,7 @@ legend {
     height: 31px;
     font-size: 15px;
     padding-left: 10px;
-    margin: 10px 65px 10px 0;
+    margin: 10px 100px 10px 0;
   }
 }
 
@@ -186,9 +179,6 @@ legend {
 .buto_blue {
   background-color: rgb(52, 173, 241);
 }
-
-
-
 
 #lab {
   height: 50px;
