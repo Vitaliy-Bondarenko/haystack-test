@@ -19,7 +19,6 @@
   &.resume { background-position: -770px 0px;  }
 }
 
-
 .sprite_iphone {
   background: url('sprites/iphones.png') no-repeat top left;
   width: 266px;
@@ -56,20 +55,16 @@ legend {
   width: inherit; 
 }
 
-.leg_emp {
-  margin: 0 43% 10px;
-}
+.leg_emp { margin: 0 43% 10px; }
 
-.leg_job {
-  margin: 0 42% 10px;
-} 
+.leg_job { margin: 0 42% 10px; } 
 
 .sing_m {
   min-height: 440px;
   background-color: #0F6274;
   margin: 80px 0 100px 0;
-
 }
+
 .sing {
   max-width: 980px;
   min-height: 440px;
@@ -129,9 +124,9 @@ legend {
   min-height: 1462px;
   margin: 0px auto;
 
-  img {
-    width: 28.5%;
-  } 
+    img {
+      width: 28.5%;
+    } 
 }
 
 .pol {
@@ -189,9 +184,7 @@ legend {
   }
 }
 
-.buto_blue {
-  background-color: rgb(52, 173, 241);
-}
+.buto_blue { background-color: rgb(52, 173, 241); }
 
 #lab {
   height: 50px;
