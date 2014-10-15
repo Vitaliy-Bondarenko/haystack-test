@@ -2,44 +2,47 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
 .sprite_job_emp { 
   background: url('sprites/job_and_emp.png') no-repeat top left;
   width: 110px;
   height: 110px;
-  margin: 0 auto;
+  margin: auto auto 17% auto;
+
+  &.candidates { background-position: 0px 0px;  } 
+  &.match { background-position: -110px 0px;  } 
+  &.emp_time { background-position: -220px 0px;  } 
+  &.privacy { background-position: -330px 0px;  } 
+  &.jobs { background-position: -440px 0px;  } 
+  &.like_you { background-position: -550px 0px;  } 
+  &.job_time { background-position: -660px 0px;  } 
+  &.resume { background-position: -770px 0px;  }
 }
 
-.sprite_job_emp.candidates { background-position: 0px 0px;  } 
-.sprite_job_emp.match { background-position: -110px 0px;  } 
-.sprite_job_emp.emp_time { background-position: -220px 0px;  } 
-.sprite_job_emp.privacy { background-position: -330px 0px;  } 
-.sprite_job_emp.jobs { background-position: -440px 0px;  } 
-.sprite_job_emp.like_you { background-position: -550px 0px;  } 
-.sprite_job_emp.job_time { background-position: -660px 0px;  } 
-.sprite_job_emp.resume { background-position: -770px 0px;  }
 
 .sprite_iphone {
   background: url('sprites/iphones.png') no-repeat top left;
   width: 266px;
   height: 565px;
-} 
+  
+  &.iphone {
+    background-position: 0px 0px;
+    position: relative;
+    top: -62px;
+    left: 6.3%;
+    float: left;
+  }
 
-.sprite_iphone.iphone {
-  background-position: 0px 0px;
-  position: relative;
-  top: -62px;
-  left: 6.3%;
-  float: left;
-}
+  &.iphone_l {
+    background-position: 0px 0px;
+    float: right;
+  }
 
-.sprite_iphone.iphone_l {
-  background-position: 0px 0px;
-  float: right;
+  &.iphone_r { 
+    background-position: -267px 0px;
+    float: left;
+  }
 } 
-.sprite_iphone.iphone_r { 
-  background-position: -267px 0px;
-  float: left;
-}
 
 legend {
   display: block;
@@ -61,13 +64,13 @@ legend {
   margin: 0 42% 10px;
 } 
 
-#sing_m {
+.sing_m {
   min-height: 440px;
   background-color: #0F6274;
   margin: 80px 0 100px 0;
 
 }
-#sing {
+.sing {
   max-width: 980px;
   min-height: 440px;
   margin: 5px auto 128px auto;
@@ -89,18 +92,21 @@ legend {
 }
 
 #emp_link {
-  /*width: 25%;*/
   float: left;
   padding: 39px 3%;
 
-  b {
-    font-size: 12.5px;
+  .descr {
+    font-size: 13.5px;
     color: #868686;
+    text-align: center;
+    display: table;
+    margin-top: 10px;
   }
 
   .name_blu {
-    font-size: 20px;
+    font-size: 21px;
     color: #1694C9;
+    text-align: center;
   }
 }
 
@@ -116,8 +122,8 @@ legend {
   min-height: 1462px;
   background-color: #F6F6F6;
   margin-top: 19px;
-
 }
+
 #rekl {
   max-width: 980px;
   min-height: 1462px;
@@ -128,7 +134,7 @@ legend {
   } 
 }
 
-#pol {
+.pol {
   margin: 35px 0 0 0px;
   float: right;
   padding: 0 90px 0 116px;
@@ -141,20 +147,21 @@ legend {
     margin-bottom: 21px; 
   }
 
-  b {
+  span {
     float: left;
     margin: 19px 23px 0px 25px;
     font-size: 17px;
     color: white;
+    font-weight: bold;
   }
+}
 
-  .my_lab {
-    width: 352px;
-    height: 31px;
-    font-size: 15px;
-    padding-left: 10px;
-    margin: 10px 100px 10px 0;
-  }
+.my_lab {
+  width: 352px;
+  height: 31px;
+  font-size: 15px;
+  padding-left: 10px;
+  margin: 10px 100px 10px 0;
 }
 
 .buto {
@@ -171,7 +178,6 @@ legend {
   background-color: #F17420;
   margin-left: 207px;
 }
-
 
 @media only screen {
   .buto_orange {
@@ -225,4 +231,43 @@ legend {
   width: 71%;
   line-height: 44px;
   color: #2092CC;
+}
+
+@media (max-width: 991px) {
+  .coll-mobille {
+    display: flex;
+    margin: 0;
+  }
+
+  .coll-mobille-pole {
+
+    padding-right: 10%;
+    padding-left: 7%;
+  }
+
+  .mobille-button {
+    height: 45px;
+    font-size: 180%;
+    width: 38%;
+    margin-left: auto;
+  }
+  
+  .mobille-sing {
+    height: 45px;
+    font-size: 180%;
+    width: 90%;
+  }
+
+  span.mob_span {
+    font-size: 20px;
+    margin: 22px 12px 0;  
+  }
+
+  .leg_emp.mob {
+    margin: 0 30% 10px;
+  }
+
+  .leg_job.mob {
+    margin: 0 25% 10px;
+  }
 }

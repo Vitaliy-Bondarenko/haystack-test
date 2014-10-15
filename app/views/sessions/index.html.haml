@@ -1,100 +1,60 @@
-#sing_m
-  #sing
+.sing_m.coll-mobille
+  .sing.coll-mobille
     .sprite_iphone.iphone.hidden-sm.hidden-xs
-    #pol.col-xs-12.col-md-8
+    .coll-mobille-pole.pol.col-xs-12.col-md-8
       %p
         Sign Up now and view hundreds of jobs in minutes for free!
-      %button#button_applicant.buto.buto_orange Applicant
-      %b or
-      %button#button_employer.buto.buto_blue Employer
-      = email_field_tag "description", "", :placeholder => "email@example.com", :class => 'my_lab'
-      = password_field_tag "description", "", :placeholder => "password", :class => 'my_lab'
-      = password_field_tag "description", "", :placeholder => "repyte password", :class => 'my_lab'
-      = button_to 'Sing up', "#", :id => "button_singup", :class => "buto buto_ok"
+      %button#button_applicant.buto.buto_orange.mobille-button Applicant
+      %span.mob_span or
+      %button#button_employer.buto.buto_blue.mobille-button Employer
+      = email_field_tag "description", "", :placeholder => "email@example.com", :class => 'mobille-sing my_lab'
+      = password_field_tag "description", "", :placeholder => "password", :class => 'my_lab mobille-sing'
+      = password_field_tag "description", "", :placeholder => "repyte password", :class => 'my_lab mobille-sing'
+      = button_to 'Sing up', "#", :id => "button_singup", :class => "buto buto_ok mobille-button"
 %fieldset#emp
-  %legend.leg_emp Employers
+  %legend.leg_emp.mob Employers
   #emp_link.col-xs-6.col-md-3
     %a{:href => "#"}
       .sprite_job_emp.candidates
-    %br
-    %br
-    %b.name_blu
-      %center Browse Candidates
-    %br
-    %b
-      %center Browse and select candidates hunderson on filteder job aplicants on minutes
+    .name_blu Browse Candidates
+    %span.descr Browse and select candidates hunderson on filteder job aplicants on minutes
   #emp_link.col-xs-6.col-md-3
     %a{:href => "#"}
       .sprite_job_emp.match
-    %br
-    %br
-    %b.name_blu
-      %center Browse Candidates
-    %br
-    %b
-      %center Browse and select candidates hunderson on filteder job aplicants on minutes
+    .name_blu Browse Candidates
+    %span.descr Browse and select candidates hunderson on filteder job aplicants on minutes
   #emp_link.col-xs-6.col-md-3
     %a{:href => "#"}
       .sprite_job_emp.emp_time
-    %br
-    %br
-    %b.name_blu
-      %center Browse Candidates
-    %br
-    %b
-      %center Browse and select candidates hunderson on filteder job aplicants on minutes
+    .name_blu Browse Candidates
+    %span.descr Browse and select candidates hunderson on filteder job aplicants on minutes
   #emp_link.col-xs-6.col-md-3
     %a{:href => "#"}
       .sprite_job_emp.privacy    
-    %br
-    %br
-    %b.name_blu
-      %center Browse Candidates
-    %br
-    %b
-      %center Browse and select candidates hunderson on filteder job aplicants on minutes
-%fieldset#job
-  %legend.leg_job Job Seekers
+    .name_blu Browse Candidates
+    %span.descr Browse and select candidates hunderson on filteder job aplicants on minutes
+%fieldset#job.mobille-job-emp
+  %legend.leg_job.mob Job Seekers
   #emp_link.col-xs-6.col-md-3
     %a{:href => "#"}
       .sprite_job_emp.jobs
-    %br
-    %br
-    %b.name_blu
-      %center Browse Candidates
-    %br
-    %b
-      %center Browse and select candidates hunderson on filteder job aplicants on minutes
+    .name_blu Browse Candidates
+    %span.descr Browse and select candidates hunderson on filteder job aplicants on minutes
   #emp_link.col-xs-6.col-md-3
     %a{:href => "#"}
       .sprite_job_emp.like_you
-    %br
-    %br
-    %b.name_blu
-      %center Browse Candidates
-    %br
-    %b
-      %center Browse and select candidates hunderson on filteder job aplicants on minutes
+    .name_blu Browse Candidates
+    %span.descr Browse and select candidates hunderson on filteder job aplicants on minutes
   #emp_link.col-xs-6.col-md-3
     %a{:href => "#"}
       .sprite_job_emp.job_time
-    %br
-    %br
-    %b.name_blu
-      %center Browse Candidates
-    %br
-    %b
-      %center Browse and select candidates hunderson on filteder job aplicants on minutes
+    .name_blu Browse Candidates
+    %span.descr Browse and select candidates hunderson on filteder job aplicants on minutes
   #emp_link.col-xs-6.col-md-3
     %a{:href => "#"}
       .sprite_job_emp.resume
-    %br
-    %br
-    %b.name_blu
-      %center Browse Candidates
-    %br
-    %b
-      %center Browse and select candidates hunderson on filteder job aplicants on minutes
+    .name_blu Browse Candidates
+    %span.descr Browse and select candidates hunderson on filteder job aplicants on minutes
 #rekl_m.hidden-sm.hidden-xs
   #rekl
     #rekl_top
