@@ -139,8 +139,6 @@ div {
   padding: 15px 0px;
 }
 
- 
-
 @media only screen {
   .nav-button {
     display: block;
@@ -284,10 +282,6 @@ div {
 }
 
 @media (max-width: 700px) {
-  .coll-mobille {
-
-  }
-
   .mobille-foot {
     width: 100%;
     float: left;
@@ -302,11 +296,9 @@ div {
 }
 
 @media (max-width: 991px)  {
-  
   .mobille-logo{
     width: 100%;
     text-align: center;
     padding-left: 33px;
   }
-
 }
